@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="height:100%">
+    <head>
+        <meta charset="utf-8"/>
+        <title>To-Do List</title>
+        <link rel="icon" type="image/ico" href="logo.png" />
+        <link defer rel="stylesheet" href="todostyle.css"/>
+    </head>
+    <body style="height: 100%">
+        <h1 class="title" style="font-size: 40px; color:darkblue">To-Do List</h1>
+        <div class="parent-wrapper">
+            <div class="todo-list-wrapper" id="todo-list-wrapper-id">
+                <ul class="todo-list" id="todo-list-id">
+                    
+                </ul>
+            </div>
+            <div class="fixed-control-section-wrapper">
+                <input id="textbox" class="textbox" type="text" name="newtask" value=""placeholder="Type Here" >
+                <div id="add" class="addbtn" role="button">Add</div>
+                <div id="delete-all" class="delete-allbtn" role="button">Delete All</div>
+                <div id="delete-selected" class="delete-selectedbtn" role="button">Delete Selected</div>
+                <div id="delete-completed" class="delete-completedbtn" role="button">Delete Completed</div>
+            </div>
+        </div>
+        <li class="list-item-template">
+            <input type="checkbox" data-name="check-box">
+            <div class="todo-text-div" data-name="todo-text-div">Hi i am the task</div>
+            <div class="list-buttons-wrapper">
+                <div class="donebtn" data-name="completed-button" role="button">Completed</div>
+                <div class="updatebtn" data-name="update-button" role="button">Update</div>
+                <div class="deletebtn" data-name="delete-button" role="button">Delete</div>
+            </div>
+        </li>
+        <script defer src="todoscript.js"></script>
+    </body>
+</html>

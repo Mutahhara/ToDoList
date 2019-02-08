@@ -1,0 +1,111 @@
+*{
+    font-size: 15px bold;
+}
+.parent-wrapper{
+    border: solid 3px #008CBA;
+    padding:5px;
+    margin:10px;
+    height:640px;
+}
+.fixed-control-section-wrapper{
+    border: solid 3px #008CBA;
+    padding:5px;
+    margin:10px;
+}
+.todo-list-wrapper{
+    border: solid 3px #008CBA;
+    padding:5px;
+    margin:10px;
+    height: 500px;
+    overflow: scroll;
+}
+body{
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    flex-direction: column;
+    background-image:linear-gradient(white, grey), url(bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-blend-mode:saturation;
+}
+.parent-wrapper{
+    width:50%;
+ 
+}
+.fixed-control-section-wrapper{
+    display:flex;
+    justify-content: center;
+}
+.list-buttons-wrapper{
+    display: flex;
+    align-items: center;
+    
+}
+.list-item{
+    display: flex;
+    justify-content:flex-start;
+}
+.todo-text-div{
+    color:darkblue;
+    padding:5px;
+    margin:10px;
+    border: solid 1px #008CBA;
+    background-color: white;
+    max-width:230px;
+    width:300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+.textbox{
+   width:245px;
+}
+.todo-list{
+    padding: 10px;
+}
+input{
+    align-self: center;
+    height:30px;
+    color: gray;
+    font-size: 15px;
+}
+.addbtn, .donebtn, .deletebtn, .delete-allbtn, .updatebtn, .delete-selectedbtn, .delete-completedbtn{
+    padding:5px;
+    margin:10px;
+    background-color:#008CBA;
+    color: white;
+    border: solid 2px transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}   
+input:focus{
+    outline-width: medium;
+    outline-style: solid;
+ 
+}
+[role="button"]:active, [role="button"]:hover{
+    box-shadow: 3px 3px grey;
+
+}
+input[type="checkbox"]:focus{
+    outline:0;
+}
+.list-item-template{
+   display: none;
+}
+.completed-class{
+    text-decoration:line-through;
+    background-color:aquamarine;
+    padding:5px;
+    margin:10px;
+    border: solid 1px #008CBA;
+    max-width:230px;
+    width:300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
